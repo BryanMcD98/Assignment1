@@ -1,2 +1,2 @@
 # Assignment1
-First assignment iin Object orientated programming
+First assignment in Object orientated programming

@@ -1,6 +1,6 @@
 class Star
 {
-  float x, y, vertex1, vertex2, vertex3, vertex4;
+  float x, y, r, vertex1, vertex2, vertex3, vertex4;
   
   
   Star(float v1, float v2, float v3, float v4)
@@ -9,8 +9,9 @@ class Star
     vertex2 = v2;
     vertex3 = v3;
     vertex4 = v4;
-    x = random(v1, v2);
-    y = random(v3, v4);
+    x = random(vertex1+10, vertex2-10);
+    y = random(vertex3+10, vertex4-10);
+    r =  random(4, 8);
   
   }
   
@@ -18,18 +19,28 @@ class Star
   {
       x += random(-5, 5);
       y += random(-5, 5);
-  }
-    
+      if (x < vertex1)
+      {
+        x += 15;
+      }
+      if (x > vertex2)
+      {
+        x -= 15;
+      }
+      if (y < vertex3)
+      {
+        y += 15;
+      }
+      if (y > vertex4)
+      {
+        y -= 15;
+      }
   }
   
   void show()
   {
-    int r = (int) random(1, 8);
     fill(#F4FFA2);
     noStroke();
-    
-    float sx = map(x/z, 0, 1, v1, v2);
-    float sy = map(y/z, 0, 1, v3, v4);
-    ellipse(sx, sy, r, r);
+    ellipse(x, y, r, r);
   }
 }

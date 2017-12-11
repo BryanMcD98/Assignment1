@@ -1,3 +1,5 @@
+Star[] stars = new Star[50];
+
 class Radar
 {
   float x, y, x2, y2, s;
@@ -16,15 +18,25 @@ class Radar
       startY2 = y2;
       x2 = x;
       y2 = y;
-  }
-  
- 
+      
+      for( int i = 0; i < stars.length; i++)
+      {
+        stars[i] = new Star(startX, startX2, startY, startY2);
+      }
+      
+    }
   
   void update()
   {    
     x += s;
     y2 += s;
     
+    for( int i = 0; i < stars.length; i++)
+    {
+        stars[i].show();
+    }
+    stroke(255);
+    line(x,y, x2, y2);
     if(x > startX2)
     {
       x = startX2;
@@ -43,12 +55,18 @@ class Radar
       x2 += s;
       if(x2 > startX2)
       {
+        for( int i = 0; i < stars.length; i++)
+        {
+          stars[i].update();
+        }
+        
         x2 = startX;
         y2 = startY;
+        
       }
       
     }
-    line(x,y, x2, y2);
+    
   }
   
   void stars()

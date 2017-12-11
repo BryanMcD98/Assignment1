@@ -16,8 +16,8 @@ class Radar
       startY = y;
       startY2 = y2;
       
-      x2 = x + width*0.125;
-      y2 = y + height*0.215;
+      x2 = x;
+      y = startY;
       
       for( int i = 0; i < stars.length; i++)
       {
@@ -29,6 +29,7 @@ class Radar
   void update()
   {    
     x += s;
+    
     
     for( int i = 0; i < stars.length; i++)
     {
@@ -44,32 +45,13 @@ class Radar
       {
         x = startX;
         y = startY;
-      }
-      
-    }
-    
-    if(y2 > startY2)
-    {
-      y2 = startY2;
-      x2 += s;
-      if(x2 > startX2)
-      {
         for( int i = 0; i < stars.length; i++)
         {
           stars[i].update();
         }
-        
-        x2 = startX;
-        y2 = startY;
-        
       }
       
     }
-    
-  }
-  
-  void stars()
-  {
     
   }
 }

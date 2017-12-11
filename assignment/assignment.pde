@@ -30,7 +30,6 @@ Tab t1;
 void draw()
 {
   drawBackground();
-  textFont(font, 32);
   s1.render();
   b1.drawBox();
   b2.drawBox();

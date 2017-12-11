@@ -27,19 +27,27 @@ class Radar
     
     if(x > startX2)
     {
-      x = startX;
+      x = startX2;
+      y += s;
+      if(y > startY2)
+      {
+        x = startX;
+        y = startY;
+      }
+      
     }
+    
     if(y2 > startY2)
     {
-      y2 = startY;
+      y2 = startY2;
+      x2 += s;
+      if(x2 > startX2)
+      {
+        x2 = startX;
+        y2 = startY;
+      }
+      
     }
     line(x,y, x2, y2);
-    
-    ellipse(x, y, 10, 10);
-    
-    ellipse(x2, y2, 10, 50);
-    
-    ellipse(startX, startY, 20, 20);
-    ellipse(startX2, startY2, 20, 20);
   }
 }

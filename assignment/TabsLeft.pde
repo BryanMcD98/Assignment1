@@ -32,6 +32,6 @@ class TabLeft
       textFont(font, 20);
     }
     textAlign(LEFT);
-    text(m, x+(w*0.1), y+(h*0.75));
+    text(m, x+(w*0.1), y+(h*0.77));
   }  
 }

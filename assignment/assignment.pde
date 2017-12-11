@@ -5,7 +5,7 @@ void setup()
   size(1000, 600);
   smooth();
   
-  
+  font = loadFont("ARDESTINE-28.vlw");
   
   s1 = new Spaceship(width * 0.145, height * 0.3, 45); 
   b1 = new Box(width * 0.02, height * 0.02, width * 0.25, height * 0.5);
@@ -29,6 +29,7 @@ PowerSymbol p1;
 void draw()
 {
   drawBackground();
+  textFont(font, 32);
   s1.render();
   b1.drawBox();
   b2.drawBox();
@@ -38,6 +39,7 @@ void draw()
   c2.render();
   c3.render();
   c4.render();
+  
 }
 
 void drawBackground()

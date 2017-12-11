@@ -10,7 +10,7 @@ void setup()
   s1 = new Spaceship(width * 0.145, height * 0.3, 45); 
   b1 = new Box(width * 0.02, height * 0.02, width * 0.25, height * 0.5);
   b2 = new Box(width * 0.02, height * 0.54, width * 0.25, height * 0.419);
-  r1 = new Radar(width * 0.02, height * 0.54, width * 0.27, height * 0.9569, 3.5);
+  r1 = new Radar(width * 0.02, height * 0.54, width * 0.27, height * 0.9569, 5);
   c1 = new CircleMenu(width*0.60, height*0.5, 75);
   p1 = new PowerSymbol(width*0.60, height*0.5, 70);
   c2 = new CircleMenu(width*0.60, height*0.5, 150);

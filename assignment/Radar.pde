@@ -35,7 +35,7 @@ class Radar
     {
         stars[i].show();
     }
-    stroke(255);
+    stroke(203, 33, 47, 90);
     line(x,y, x2, y2);
     if(x > startX2)
     {

@@ -19,19 +19,19 @@ class Star
   {
       x += random(-5, 5);
       y += random(-5, 5);
-      if (x < vertex1)
+      if (x < vertex1+5)
       {
         x += 15;
       }
-      if (x > vertex2)
+      if (x > vertex2-5)
       {
         x -= 15;
       }
-      if (y < vertex3)
+      if (y < vertex3+5)
       {
         y += 15;
       }
-      if (y > vertex4)
+      if (y > vertex4-5)
       {
         y -= 15;
       }

@@ -2,7 +2,7 @@ PFont font;
 
 void setup()
 {
-  size(1000, 600);
+  size(1300, 600);
   smooth();
   
   font = loadFont("ARDESTINE-28.vlw");
@@ -16,6 +16,7 @@ void setup()
   c2 = new CircleMenu(width*0.60, height*0.5, 150);
   c3 = new CircleMenu(width*0.60, height*0.5, 400);
   c4 = new CircleMenu(width*0.60, height*0.5, 525);
+  t1 = new Tab(width*0.98, height*0.1, 24);
 }
 
 
@@ -24,7 +25,7 @@ Box b1, b2;
 Radar r1;
 CircleMenu c1, c2, c3, c4;
 PowerSymbol p1;
-
+Tab t1;
 
 void draw()
 {
@@ -39,7 +40,7 @@ void draw()
   c2.render();
   c3.render();
   c4.render();
-  
+  t1.write();
 }
 
 void drawBackground()

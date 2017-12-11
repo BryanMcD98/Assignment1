@@ -11,13 +11,13 @@ class Radar
       x2 = xpos2;
       y2 = ypos2;
       s = speed;
-      
       startX = x;
       startX2 = x2;
       startY = y;
       startY2 = y2;
-      x2 = x;
-      y2 = y;
+      
+      x2 = x + width*0.125;
+      y2 = y + height*0.215;
       
       for( int i = 0; i < stars.length; i++)
       {
@@ -29,7 +29,6 @@ class Radar
   void update()
   {    
     x += s;
-    y2 += s;
     
     for( int i = 0; i < stars.length; i++)
     {

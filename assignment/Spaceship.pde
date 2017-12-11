@@ -1,31 +1,24 @@
 class Spaceship
 {
-  float x, y;
-  float pos, rotSpeed; 
-  Spaceship (float xpos, float ypos) 
+  float x, y, l;
+  Spaceship (float xpos, float ypos, float size) 
   {  
     x = xpos;
     y = ypos; 
-    //rotSpeed = s; 
+    l = size;
   } 
    
-  void update() 
-  { 
-    
-  }  
-    
   void render()
   {
-    float l = 100;
-    stroke(0, 255, 0, 90);
-    strokeWeight(1);
+    stroke(60, 200, 60, 90);
+    strokeWeight(1.5);
     noFill();
     
     //Head
     triangle(x, y-(2.5*l), x-l, y, x+l, y);
     
     //Body
-    strokeWeight(0.75);
+    strokeWeight(1.25);
     rect(x - l, y, (2 * l), l);
     
     //Wings
@@ -40,7 +33,7 @@ class Spaceship
     rect(x-(l*1.825), y-(l*1.1), (l*0.1), (l*0.3));
     
     //Thrusters
-    strokeWeight(1);
+    strokeWeight(1.5);
     arc(x-(l/2), y+l, (l*0.8), (l/2), 0, PI);
     arc(x+(l/2), y+l, (l*0.8), (l/2), 0, PI);
     

@@ -1,9 +1,11 @@
 void setup()
 {
   size(1000, 600);
+  smooth();
+  
 }
 
-Spaceship s1 = new Spaceship(500, 300); 
+Spaceship s = new Spaceship(142.5, 160, 45); 
 
 void draw()
 {
@@ -13,7 +15,7 @@ void draw()
   drawBackground();
   boxDisplay(boxX, boxY);
   boxDisplay(boxX, (height/2)+boxY);
-  s1.render();
+  s.render();
 }
 
 void drawBackground()
@@ -34,9 +36,10 @@ void drawBackground()
 
 void boxDisplay(float bX, float bY)
 {
-  float boxWidth = width * 0.2;
+  float boxWidth = width * 0.25;
   float boxHeight = height * 0.45;
-  stroke(255, 255, 255, 80);
+  stroke(90, 220, 160, 80);
+  strokeWeight(1.5);
   noFill();
   rect(bX, bY, boxWidth, boxHeight);
 }

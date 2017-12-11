@@ -24,7 +24,7 @@ class TabRight
     if(style == 0)
     {
       fill(203, 33, 47);
-    textFont(font, 24);
+      textFont(font, 24);
     }
     else
     {

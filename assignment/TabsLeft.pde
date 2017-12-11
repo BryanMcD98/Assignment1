@@ -19,19 +19,19 @@ class TabLeft
     noFill();
     rect(x, y, w, h); 
     fill(90, 220, 160);
-    rect(x+(w), y, 10, h);
+    rect(x, y, 10, h);
     
     if(style == 0)
     {
       fill(203, 33, 47);
-    textFont(font, 24);
+      textFont(font, 24);
     }
     else
     {
       fill(90, 220, 160);
       textFont(font, 20);
     }
-    textAlign(RIGHT);
-    text(m, x+(w*0.9), y+(h*0.75));
+    textAlign(LEFT);
+    text(m, x+(w*0.1), y+(h*0.75));
   }  
 }

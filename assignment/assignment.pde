@@ -5,10 +5,13 @@ void setup()
 
 void draw()
 {
-  float boxDist = width * 0.02;
+  float boxX = width * 0.02;
+  float boxY = height * 0.02;
+  
   
   drawBackground();
-  boxDisplay(boxDist);
+  boxDisplay(boxX, boxY);
+  boxDisplay(boxX, (height/2)+boxY);
 }
 
 void drawBackground()
@@ -27,11 +30,11 @@ void drawBackground()
    }
 }
 
-void boxDisplay(float bDist)
+void boxDisplay(float bX, float bY)
 {
   float boxWidth = width * 0.2;
   float boxHeight = height * 0.45;
   stroke(255);
   noFill();
-  rect(bDist, bDist, boxWidth, boxHeight);
+  rect(bX, bY, boxWidth, boxHeight);
 }

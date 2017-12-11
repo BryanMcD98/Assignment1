@@ -7,12 +7,14 @@ void setup()
   b1 = new Box(width * 0.02, height * 0.02, width * 0.25, height * 0.5);
   b2 = new Box(width * 0.02, height * 0.54, width * 0.25, height * 0.419);
   r1 = new Radar(width * 0.02, height * 0.54, width * 0.27, height * 0.9569, 3.5);
+  c1 = new CircleMenu(width*0.65, height*0.5, 75);
 }
 
 
 Spaceship s1;
 Box b1, b2;
 Radar r1;
+CircleMenu c1;
 
 
 void draw()
@@ -22,6 +24,7 @@ void draw()
   b1.drawBox();
   b2.drawBox();
   r1.update();
+  c1.render();
 }
 
 void drawBackground()

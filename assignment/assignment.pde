@@ -20,17 +20,17 @@ void setup()
   c3 = new CircleMenu(width*0.61, height*0.5, 400);
   c4 = new CircleMenu(width*0.61, height*0.5, 525);
   
-  t1 = new Tab(width*0.81, height*0.02, width*0.17, height*0.05, "Preset", 0);
-  t2 = new Tab(width*0.83, height*0.09, width*0.15, height*0.05, "Default", 1);
-  t3 = new Tab(width*0.83, height*0.16, width*0.15, height*0.05, "Hyperdrive", 1);
-  t4 = new Tab(width*0.83, height*0.23, width*0.15, height*0.05, "Cruise Control", 1);
-  t5 = new Tab(width*0.83, height*0.30, width*0.15, height*0.05, "Hover", 1);
-  t6 = new Tab(width*0.83, height*0.37, width*0.15, height*0.05, "Close Navigation", 1);
+  tR1 = new TabLeft(width*0.81, height*0.02, width*0.17, height*0.05, "Preset", 0);
+  tR2 = new TabLeft(width*0.83, height*0.09, width*0.15, height*0.05, "Default", 1);
+  tR3 = new TabLeft(width*0.83, height*0.16, width*0.15, height*0.05, "Hyperdrive", 1);
+  tR4 = new TabLeft(width*0.83, height*0.23, width*0.15, height*0.05, "Cruise Control", 1);
+  tR5 = new TabLeft(width*0.83, height*0.30, width*0.15, height*0.05, "Hover", 1);
+  tR6 = new TabLeft(width*0.83, height*0.37, width*0.15, height*0.05, "Close Navigation", 1);
   
-  t7 = new Tab(width*0.81, height*0.91, width*0.17, height*0.05, "Emergency", 0);
-  t8 = new Tab(width*0.83, height*0.84, width*0.15, height*0.05, "Shutdown", 1);
-  t9 = new Tab(width*0.83, height*0.77, width*0.15, height*0.05, "Self-Destruct", 1);
-  t10 = new Tab(width*0.83, height*0.70, width*0.15, height*0.05, "Core Ejection", 1);
+  tR7 = new TabLeft(width*0.81, height*0.91, width*0.17, height*0.05, "Emergency", 0);
+  tR8 = new TabLeft(width*0.83, height*0.84, width*0.15, height*0.05, "Shutdown", 1);
+  tR9 = new TabLeft(width*0.83, height*0.77, width*0.15, height*0.05, "Self-Destruct", 1);
+  tR10 = new TabLeft(width*0.83, height*0.70, width*0.15, height*0.05, "Core Ejection", 1);
 }
 
 
@@ -39,7 +39,7 @@ Box b1, b2;
 Radar r1;
 CircleMenu c1, c2, c3, c4;
 PowerSymbol p1;
-Tab t1, t2, t3, t4, t5, t6, t7, t8, t9, t10;
+TabLeft tR1, tR2, tR3, tR4, tR5, tR6, tR7, tR8, tR9, tR10;
 
 void draw()
 {
@@ -57,16 +57,16 @@ void draw()
   c3.render();
   c4.render();
   
-  t1.boxTab();
-  t2.boxTab();
-  t3.boxTab();
-  t4.boxTab();
-  t5.boxTab();
-  t6.boxTab();
-  t7.boxTab();
-  t8.boxTab();
-  t9.boxTab();
-  t10.boxTab();
+  tR1.boxTab();
+  tR2.boxTab();
+  tR3.boxTab();
+  tR4.boxTab();
+  tR5.boxTab();
+  tR6.boxTab();
+  tR7.boxTab();
+  tR8.boxTab();
+  tR9.boxTab();
+  tR10.boxTab();
 }
 
 void drawBackground()

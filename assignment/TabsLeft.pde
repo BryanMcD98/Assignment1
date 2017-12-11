@@ -1,10 +1,10 @@
-class Tab
+class TabLeft
 {
   float x, y, w, h, size;
   int style;
   String m;
   
-  Tab(float xpos, float ypos, float twidth, float theight, String message, int styleTab)
+  TabLeft(float xpos, float ypos, float twidth, float theight, String message, int styleTab)
   {
     x = xpos;
     y = ypos;

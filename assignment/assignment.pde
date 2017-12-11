@@ -5,6 +5,11 @@ void setup()
 
 void draw()
 {
+  drawBackground();
+}
+
+void drawBackground()
+{
   background(#050817);
   float x, y;
   float r = 1.75;

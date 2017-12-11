@@ -19,12 +19,12 @@ void drawBackground()
   background(#050817);
   float x, y;
   float r = 1;
-  for( x = 0; x < width + 20; x += 20)
+  for( x = 2.5; x < width + 20; x += 19)
   {
-    for(y = 0; y <height + 20; y += 20)
+    for(y = 2.5; y <height + 20; y += 19)
     {
        noStroke();
-       fill(255);
+       fill(255, 255, 255, 75);
        ellipse(x, y, r, r);
      }
    }

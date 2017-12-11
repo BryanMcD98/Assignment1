@@ -8,15 +8,20 @@ void setup()
   font = loadFont("ARDESTINE-28.vlw");
   
   s1 = new Spaceship(width * 0.145, height * 0.3, 45); 
+  
   b1 = new Box(width * 0.02, height * 0.02, width * 0.25, height * 0.5);
   b2 = new Box(width * 0.02, height * 0.54, width * 0.25, height * 0.419);
+  
   r1 = new Radar(width * 0.02, height * 0.54, width * 0.27, height * 0.9569, 5);
+  
   c1 = new CircleMenu(width*0.60, height*0.5, 75);
   p1 = new PowerSymbol(width*0.60, height*0.5, 70);
   c2 = new CircleMenu(width*0.60, height*0.5, 150);
   c3 = new CircleMenu(width*0.60, height*0.5, 400);
   c4 = new CircleMenu(width*0.60, height*0.5, 525);
-  t1 = new Tab(width*0.98, height*0.1, 24);
+  
+  t1 = new Tab(width*0.825, height*0.02, width*0.13, height*0.05, "Preset", 0);
+  t2 = new Tab(width*0.85, height*0.09, width*0.13, height*0.05, "Default", 1);
 }
 
 
@@ -25,7 +30,7 @@ Box b1, b2;
 Radar r1;
 CircleMenu c1, c2, c3, c4;
 PowerSymbol p1;
-Tab t1;
+Tab t1, t2;
 
 void draw()
 {
@@ -39,7 +44,8 @@ void draw()
   c2.render();
   c3.render();
   c4.render();
-  t1.write();
+  t1.boxTab();
+  t2.boxTab();
 }
 
 void drawBackground()

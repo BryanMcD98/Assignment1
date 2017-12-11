@@ -13,9 +13,9 @@ class Box
   
   void drawBox()
   {
-     stroke(90, 220, 160, 80);
-     strokeWeight(1.5);
-     noFill();
-     rect(x, y, w, h);
+    stroke(90, 220, 160, 80);
+    strokeWeight(1.5);
+    noFill();
+    rect(x, y, w, h);
   }
 }

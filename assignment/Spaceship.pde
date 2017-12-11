@@ -10,7 +10,7 @@ class Spaceship
    
   void render()
   {
-    stroke(60, 200, 60, 90);
+    stroke(203, 33, 47);
     strokeWeight(1.5);
     noFill();
     

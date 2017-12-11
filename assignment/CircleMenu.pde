@@ -6,9 +6,7 @@ class CircleMenu
     x = posx;
     y = posy;
     r = radius;
-   
   }
-  
   void render()
   {
     stroke(90, 220, 160, 80);
@@ -16,4 +14,9 @@ class CircleMenu
     ellipse(x, y, r, r);
     
   }
+  void centre()
+  {
+    p1.render();
+  }
+  
 }

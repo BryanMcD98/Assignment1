@@ -6,7 +6,7 @@ void setup()
   s1 = new Spaceship(width * 0.145, height * 0.26, 45); 
   b1 = new Box(width * 0.02, height * 0.02, width * 0.25, height * 0.5);
   b2 = new Box(width * 0.02, height * 0.54, width * 0.25, height * 0.4);
-  r1 = new Radar(width * 0.02, height * 0.54, width * 0.27, height * 0.94, 10);
+  r1 = new Radar(width * 0.02, height * 0.54, width * 0.27, height * 0.9569, 1);
 }
 
 

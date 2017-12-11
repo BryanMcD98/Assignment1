@@ -3,7 +3,7 @@ void setup()
   size(1000, 600);
 }
 
-Spaceship h1 = new Spaceship(150, 150); 
+Spaceship s1 = new Spaceship(500, 300); 
 
 void draw()
 {
@@ -13,7 +13,7 @@ void draw()
   drawBackground();
   boxDisplay(boxX, boxY);
   boxDisplay(boxX, (height/2)+boxY);
-  h1.render();
+  s1.render();
 }
 
 void drawBackground()

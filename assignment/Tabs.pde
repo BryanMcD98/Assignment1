@@ -19,7 +19,8 @@ class Tab
     noFill();
     rect(x, y, w, h); 
     fill(90, 220, 160);
-    rect(x+(w-10), y, w, h);
+    rect(x+(w), y, 10, h);
+    
     if(style == 0)
     {
       fill(203, 33, 47);

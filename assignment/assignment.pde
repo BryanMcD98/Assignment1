@@ -45,6 +45,8 @@ void setup()
   lg1 = new LineGauge(16, "F", color(250, 180, 20));
   lg2 = new LineGauge(12, "W", color(18, 197, 250));
   lg3 = new LineGauge(19, "O", color(240, 250, 255));
+  
+  vb1 = new VideoBox(width*0.87, height*0.445);
 }
 
 
@@ -56,6 +58,7 @@ PowerSymbol p1;
 TabRight tR1, tR2, tR3, tR4, tR5, tR6, tR7, tR8, tR9, tR10;
 TabLeft tL1, tL2, tL3, tL4,tL5, tL6, tL7;
 LineGauge lg1, lg2, lg3;
+VideoBox vb1;
 
 void draw()
 {
@@ -93,12 +96,16 @@ void draw()
   tR8.boxTab();
   tR9.boxTab();
   tR10.boxTab();
+  
   for(int i = 0; i < 20; i++)
   {
     lg1.render(width*0.29, height*0.615);
     lg2.render(width*0.33, height*0.615);
     lg3.render(width*0.37, height*0.615);
   }
+  
+  
+  vb1.render();
 }
 
 void drawBackground()

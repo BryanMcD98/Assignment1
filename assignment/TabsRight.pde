@@ -41,10 +41,12 @@ class TabRight
       }
     }
     textAlign(RIGHT);
-    text(m, x+(w*0.9), y+(h*0.75));
-    
-    
-        
-     
+    text(m, x+(w*0.9), y+(h*0.75));    
   }  
+  
+  void update()
+  {
+    textSize(18);
+    text(m, width*0.935, height*0.57);
+  }
 }

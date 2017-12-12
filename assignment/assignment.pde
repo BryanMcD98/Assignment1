@@ -111,21 +111,29 @@ void draw()
   vb1.render();
 }
 //  tR8 = new TabRight(width*0.82, height*0.84, width*0.16, height*0.05, "Shutdown", 1);
-void keyPressed()
+  //tR9 = new TabRight(width*0.83, height*0.77, width*0.15, height*0.05, "Self-Destruct", 1);
+  //tR10 = new TabRight(width*0.84, height*0.70, width*0.14, height*0.05, "Core Ejection", 1);
+void mousePressed()
 {
   if(mouseX > width*0.82 && mouseX < width*0.98)
   {
      if(mouseY > height*0.84 && mouseY < height*0.89)
      {
-        if(millis() - timer >= 2000)
-        {
-            
-          timer = millis();
-          textSize(16);
-            textAlign(CENTER);
-            text("Shutdown!!", width*0.94, height*0.52);
-            
-        } 
+        tR8.update();
+      }
+  }
+  if(mouseX > width*0.83 && mouseX < width*0.98)
+  {
+     if(mouseY > height*0.77 && mouseY < height*0.82)
+     {
+        tR9.update();
+      }
+  }
+  if(mouseX > width*0.84 && mouseX < width*0.98)
+  {
+     if(mouseY > height*0.70 && mouseY < height*0.77)
+     {
+        tR10.update();
       }
   }
 }

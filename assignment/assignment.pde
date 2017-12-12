@@ -111,6 +111,11 @@ void draw()
   tR9.boxTab();
   tR10.boxTab();
   
+  textSize(34);
+  textAlign(CENTER);
+  fill(203, 33, 47);
+  text("Íkaros II", width*0.63, height*0.07);
+  
   for(int i = 0; i < 20; i++)
   {
     lg1.render(width*0.29, height*0.615);

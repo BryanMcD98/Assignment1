@@ -31,7 +31,15 @@ class TabLeft
     {
       fill(90, 220, 160);
       textFont(font, 20);
+      if(mouseX > x && mouseX < x+w)
+      {
+      if(mouseY > y && mouseY < y+h)
+      {  
+          fill(203, 33, 47, 90);
+       }
     }
+    }
+    
     textAlign(LEFT);
     text(m, x+(w*0.1), y+(h*0.77));
   }  

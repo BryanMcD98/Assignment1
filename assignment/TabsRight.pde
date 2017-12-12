@@ -36,7 +36,7 @@ class TabRight
     {
       if(mouseY > y && mouseY < y+h)
       {  
-          fill(203, 33, 47);
+          fill(203, 33, 47, 90);
        }
     }
     textAlign(RIGHT);

@@ -1,5 +1,4 @@
 PFont font;
-int randy =(int) random(-4,4);
 
 void setup()
 {
@@ -38,7 +37,6 @@ void setup()
   tL1 = new TabLeft(width*0.28, height*0.91, width*0.17, height*0.05, "Engine", 0);
   tL2 = new TabLeft(width*0.28, height*0.84, width*0.16, height*0.05, "Oil Temp: 3328°C", 1);
   tL3 = new TabLeft(width*0.28, height*0.77, width*0.14, height*0.05, "Coolant : 1234 L", 1);
-  tL4 = new TabLeft(width*0.28, height*0.70, width*0.13, height*0.05, "Fuel : 83%", 1);
   
   tL5 = new TabLeft(width*0.28, height*0.02, width*0.17, height*0.05, "Sheilds", 0);
   tL6 = new TabLeft(width*0.28, height*0.09, width*0.16, height*0.05, "Stability : 78%", 1);
@@ -58,11 +56,19 @@ TabRight tR1, tR2, tR3, tR4, tR5, tR6, tR7, tR8, tR9, tR10;
 TabLeft tL1, tL2, tL3, tL4,tL5, tL6, tL7;
 LineGauge lg1, lg2, lg3;
 VideoBox vb1;
-
+int randy, randyMessage;
 void draw()
 {
   
-  int randy =(int) random(-2,2);
+  if(frameCount%30==0)
+  {
+    randy =(int) random(-2,2);
+    randyMessage =(int) random(64, 89);
+  }
+  
+  
+  tL4 = new TabLeft(width*0.28, height*0.70, width*0.13, height*0.05, "Fuel : "+randyMessage+"%", 1);
+  tL6 = new TabLeft(width*0.28, height*0.09, width*0.16, height*0.05, "Stability : " + (randyMessage+4)+"%", 1);
   
   lg1 = new LineGauge(16+randy, "F", color(250, 180, 20));
   lg2 = new LineGauge(12+randy, "W", color(25, 34, 180));

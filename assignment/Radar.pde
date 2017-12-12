@@ -1,4 +1,4 @@
-Star[] stars = new Star[50];
+Star[] stars = new Star[80];
 
 class Radar
 {

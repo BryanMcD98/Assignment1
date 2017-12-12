@@ -16,8 +16,8 @@ class VideoBox
     rect(x, y+(height*0.115), width*0.02, height*0.115);
     
     fill(50, 240, 50);
-    text("(", x+(width*0.011), y+42);
+    text("(", x+(width*0.011), y+height*0.075);
     fill(237, 50, 60);
-    text(")", x+(width*0.011), y+112);
+    text(")", x+(width*0.011), y+height*0.179);
   }
 }

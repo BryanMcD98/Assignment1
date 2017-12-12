@@ -31,13 +31,14 @@ class TabRight
     {
       fill(90, 220, 160);
       textFont(font, 20);
-    }
-    if(mouseX > x && mouseX < x+w)
-    {
-      if(mouseY > y && mouseY < y+h)
-      {  
-          fill(203, 33, 47, 90);
-       }
+      if(mouseX > x && mouseX < x+w)
+      {
+        if(mouseY > y && mouseY < y+h)
+        {  
+            fill(203, 33, 47, 90);
+         }
+      
+      }
     }
     textAlign(RIGHT);
     text(m, x+(w*0.9), y+(h*0.75));

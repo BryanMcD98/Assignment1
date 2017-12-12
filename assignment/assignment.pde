@@ -109,6 +109,28 @@ void draw()
   
   vb1.render();
 }
+//  tR8 = new TabRight(width*0.82, height*0.84, width*0.16, height*0.05, "Shutdown", 1);
+void mouseDragged()
+{
+  if(mouseX > width*0.82 && mouseX < width*0.98)
+  {
+    if(mouseY > height*0.84 && mouseY < height*0.89)
+    {
+      textAlign(CENTER);
+      text("Shutdown in :", width/2, height/2);
+      for(int i = 5; i > -1; i--)
+      {
+        if(frameCount%60 ==0)
+        {
+          
+          drawBackground();
+          text(i, width/2, height/2+20);
+        }
+      }
+      
+    }
+  }
+}
 
 void drawBackground()
 {

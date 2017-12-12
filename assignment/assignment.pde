@@ -17,9 +17,10 @@ void setup()
   c1 = new CircleMenu(width*0.63, height*0.5, 75, 9, 0.04);
   p1 = new PowerSymbol(width*0.63, height*0.5, 70);
   c2 = new CircleMenu(width*0.63, height*0.5, 170, 18, 0.02);
-  c3 = new CircleMenu(width*0.63, height*0.5, 319, 21, 0.01);
-  c4 = new CircleMenu(width*0.63, height*0.5, 400, 16, 0.009);
-  c5 = new CircleMenu(width*0.63, height*0.5, 525, 12, 0.018);
+  c3 = new CircleMenu(width*0.63, height*0.5, 267, 21, 0.01);
+  c4 = new CircleMenu(width*0.63, height*0.5, 391, 16, 0.017);
+  c5 = new CircleMenu(width*0.63, height*0.5, 459, 17, 0.011);
+  c6 = new CircleMenu(width*0.63, height*0.5, 550, 12, 0.021);
   
   tR1 = new TabRight(width*0.81, height*0.02, width*0.17, height*0.05, "Presets", 0);
   tR2 = new TabRight(width*0.82, height*0.09, width*0.16, height*0.05, "Default", 1);
@@ -50,7 +51,7 @@ void setup()
 Spaceship s1;
 Box b1, b2;
 Radar r1;
-CircleMenu c1, c2, c3, c4, c5;
+CircleMenu c1, c2, c3, c4, c5, c6;
 PowerSymbol p1;
 TabRight tR1, tR2, tR3, tR4, tR5, tR6, tR7, tR8, tR9, tR10;
 TabLeft tL1, tL2, tL3, tL4,tL5, tL6, tL7;

@@ -16,6 +16,7 @@ class TabLeft
   }
   void boxTab()
   {
+    stroke(90, 220, 160, 80);
     noFill();
     rect(x, y, w, h); 
     fill(90, 220, 160);

@@ -17,11 +17,19 @@ class CircleMenu
     noFill();
     ellipse(x, y, r, r);
     pushMatrix();
+        stroke(203, 33, 47);
         translate(x, y);      
         rotate(rotate);
         ellipse(r/2, py, r2, r2);
      popMatrix();
-     rotate += s;
+     if(r2 % 2 == 0)
+     {
+       rotate += s;
+     }
+     else
+     {
+       rotate -= s;
+     }
   }
   void centre()
   {

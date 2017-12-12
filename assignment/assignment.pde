@@ -42,7 +42,9 @@ void setup()
   tL6 = new TabLeft(width*0.28, height*0.09, width*0.16, height*0.05, "Stability : 78%", 1);
   tL7 = new TabLeft(width*0.28, height*0.16, width*0.15, height*0.05, "Forcefeild: 452 &", 1);
   
-  lg1 = new LineGauge(8, "F", color(250, 180, 20));
+  lg1 = new LineGauge(16, "F", color(250, 180, 20));
+  lg2 = new LineGauge(12, "W", color(18, 197, 250));
+  lg3 = new LineGauge(19, "O", color(240, 250, 255));
 }
 
 
@@ -53,7 +55,7 @@ CircleMenu c1, c2, c3, c4;
 PowerSymbol p1;
 TabRight tR1, tR2, tR3, tR4, tR5, tR6, tR7, tR8, tR9, tR10;
 TabLeft tL1, tL2, tL3, tL4,tL5, tL6, tL7;
-LineGauge lg1;
+LineGauge lg1, lg2, lg3;
 
 void draw()
 {
@@ -93,7 +95,9 @@ void draw()
   tR10.boxTab();
   for(int i = 0; i < 20; i++)
   {
-    lg1.render(width*0.28, height*0.60);
+    lg1.render(width*0.29, height*0.615);
+    lg2.render(width*0.33, height*0.615);
+    lg3.render(width*0.37, height*0.615);
   }
 }
 

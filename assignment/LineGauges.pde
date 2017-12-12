@@ -13,6 +13,10 @@ class LineGauge
   
   void render(float x, float y)
   {
+    textAlign(CENTER);
+    textSize(27);
+    fill(c);
+    text(m, x+(width*0.01), y+(height*0.03));
     for(int i = 0; i < 20; i++)
     {
       if(i<count)
@@ -25,7 +29,8 @@ class LineGauge
       }
       y = y - 10;
       line(x, y, x+(width*0.02), y);
-    }  
+     }  
+     
   }
   
   

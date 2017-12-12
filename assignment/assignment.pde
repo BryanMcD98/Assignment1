@@ -14,11 +14,11 @@ void setup()
   
   r1 = new Radar(width * 0.02, height * 0.54, width * 0.27, height * 0.9569, 5);
   
-  c1 = new CircleMenu(width*0.61, height*0.5, 75);
-  p1 = new PowerSymbol(width*0.61, height*0.5, 70);
-  c2 = new CircleMenu(width*0.61, height*0.5, 150);
-  c3 = new CircleMenu(width*0.61, height*0.5, 400);
-  c4 = new CircleMenu(width*0.61, height*0.5, 525);
+  c1 = new CircleMenu(width*0.63, height*0.5, 75);
+  p1 = new PowerSymbol(width*0.63, height*0.5, 70);
+  c2 = new CircleMenu(width*0.63, height*0.5, 150);
+  c3 = new CircleMenu(width*0.63, height*0.5, 400);
+  c4 = new CircleMenu(width*0.63, height*0.5, 525);
   
   tR1 = new TabRight(width*0.81, height*0.02, width*0.17, height*0.05, "Presets", 0);
   tR2 = new TabRight(width*0.82, height*0.09, width*0.16, height*0.05, "Default", 1);

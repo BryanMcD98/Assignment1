@@ -1,5 +1,5 @@
 PFont font;
-int timer;
+int randy =(int) random(-4,4);
 
 void setup()
 {
@@ -44,9 +44,6 @@ void setup()
   tL6 = new TabLeft(width*0.28, height*0.09, width*0.16, height*0.05, "Stability : 78%", 1);
   tL7 = new TabLeft(width*0.28, height*0.16, width*0.15, height*0.05, "Forcefeild: 452 &", 1);
   
-  lg1 = new LineGauge(16, "F", color(250, 180, 20));
-  lg2 = new LineGauge(12, "W", color(18, 197, 250));
-  lg3 = new LineGauge(19, "O", color(240, 250, 255));
   
   vb1 = new VideoBox(width*0.87, height*0.445);
 }
@@ -64,6 +61,13 @@ VideoBox vb1;
 
 void draw()
 {
+  
+  int randy =(int) random(-2,2);
+  
+  lg1 = new LineGauge(16+randy, "F", color(250, 180, 20));
+  lg2 = new LineGauge(12+randy, "W", color(25, 34, 180));
+  lg3 = new LineGauge(19+randy, "O", color(240, 250, 255));
+  
   drawBackground();
   s1.render();
   

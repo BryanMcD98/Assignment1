@@ -9,6 +9,7 @@ class VideoBox
   
   void render()
   {
+    stroke(90, 220, 160, 80);
     fill(#050817);
     rect(x, y, width*0.118, height*0.23);
     

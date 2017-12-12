@@ -1,22 +1,19 @@
 class LineGauge
 {
-  float x, y;
   int count;
   String m;
   color c;
   
-  LineGauge(float xpos, float ypos, int counter, String message, color col)
+  LineGauge(int counter, String message, color col)
   {
-    x = xpos;
-    y = ypos;
     count = counter;
     m = message;
     c = col;
   }
   
-  void render()
+  void render(float x, float y)
   {
-    for(int i = 0; i < 10; i++)
+    for(int i = 0; i < 20; i++)
     {
       if(i<count)
       {

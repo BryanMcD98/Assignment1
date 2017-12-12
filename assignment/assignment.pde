@@ -42,7 +42,7 @@ void setup()
   tL6 = new TabLeft(width*0.28, height*0.09, width*0.16, height*0.05, "Stability : 78%", 1);
   tL7 = new TabLeft(width*0.28, height*0.16, width*0.15, height*0.05, "Forcefeild: 452 &", 1);
   
-  lg1 = new LineGauge(width*0.28, height*0.60, 8, "F", color(250, 180, 20));
+  lg1 = new LineGauge(8, "F", color(250, 180, 20));
 }
 
 
@@ -91,8 +91,10 @@ void draw()
   tR8.boxTab();
   tR9.boxTab();
   tR10.boxTab();
-  
-  lg1.render();
+  for(int i = 0; i < 20; i++)
+  {
+    lg1.render(width*0.28, height*0.60);
+  }
 }
 
 void drawBackground()
